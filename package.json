@@ -50,6 +50,6 @@
   },
   "lint-staged": {
     "*.{js}": "eslint --fix",
-    "*.{js,css,scss,md,json}": "prettier --wirte"
+    "*.{js,css,scss,md,json}": "prettier --write"
   }
 }
