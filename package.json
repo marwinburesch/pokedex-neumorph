@@ -4,6 +4,7 @@
   "description": "Pokedex neumorphism style",
   "private": true,
   "scripts": {
+    "build": "npx webpack",
     "test": "eslint src/**"
   },
   "repository": {
