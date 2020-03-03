@@ -6,7 +6,8 @@
   "scripts": {
     "build": "npx webpack",
     "test": "eslint --ext .js src",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "fake-api": "json-server --watch db.json"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
     "eslint-plugin-prettier": "^3.1.2",
     "html-webpack-plugin": "^3.2.0",
     "husky": "^4.2.3",
+    "json-server": "^0.16.1",
     "lint-staged": "^10.0.8",
     "node-sass": "^4.13.1",
     "prettier": "^1.19.1",
