@@ -1,0 +1,13 @@
+.card-header {
+  width: 80%;
+}
+
+.card-header-title {
+  & > h1 {
+  }
+  & > h2 {
+  }
+}
+
+.card-header-image {
+}
