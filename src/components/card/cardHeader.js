@@ -1,10 +1,12 @@
+import './cardHeader.scss';
 import { createElement } from '../../lib/dom';
 
-export default function cardHeader(pokemonId, pokemonName) {
-  const imageSrc = `https://github.com/fanzeyi/pokemon.json/blob/master/images/${pokemonId}.png`;
+export function createCardHeader(pokemonId, pokemonName) {
+  const pokemonIdWithZeroes = ('00' + pokemonId).slice(-3);
+  const imageSrc = `https://github.com/marwinburesch/pokemon.json/blob/master/images/${pokemonIdWithZeroes}.png?raw=true`;
   const header = createElement('header', { className: 'card-header' });
 
-  const title = createElement('title', { className: 'card-header-title' });
+  const title = createElement('div', { className: 'card-header-title' });
   const image = createElement('img', {
     className: 'card-header-image',
     src: imageSrc,
@@ -12,10 +14,10 @@ export default function cardHeader(pokemonId, pokemonName) {
   });
 
   const titlePokemonId = createElement('h2', {
-    innerText: `#${pokemonId}`
+    innerText: `#${pokemonIdWithZeroes}`
   });
   const titlePokemon = createElement('h1', {
-    innerText: pokemonName
+    innerText: pokemonName.toUpperCase()
   });
 
   title.appendChild(titlePokemonId);

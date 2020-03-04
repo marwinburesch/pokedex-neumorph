@@ -1,6 +1,15 @@
-$color_body: #000;
+$color_body: #2f3550;
 
 body {
   background-color: $color_body;
   color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
