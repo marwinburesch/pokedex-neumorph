@@ -1,6 +1,7 @@
 import './card.scss';
 import { createCardHeader } from './cardHeader';
 import { createElement } from '../../lib/dom';
+import { createCardText } from './cardText';
 
 // design: https://www.figma.com/file/fnDoJA2SQy2IK2Z5gEgGoB/pokedexv2?node-id=0%3A1
 // meta, weaknesses, evolution: https://pokeapi.co/api/v2/pokemon/metapod/
@@ -18,5 +19,6 @@ const pokemon = {
 export function createCard() {
   const card = createElement('article', { className: 'card' });
   card.appendChild(createCardHeader(pokemon.id, pokemon.name));
+  card.appendChild(createCardText(pokemon.flavortext));
   return card;
 }

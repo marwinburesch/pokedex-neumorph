@@ -1,5 +1,11 @@
 $color_body: #2f3550;
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: $color_body;
   color: white;
