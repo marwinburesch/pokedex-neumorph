@@ -1,0 +1,30 @@
+.card-header {
+  z-index: 9000;
+  height: 25%;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+}
+
+.card-header-title {
+  z-index: 9002;
+  font-weight: 700;
+  & > h1,
+  h2 {
+    margin: 1.2rem 0;
+    font-size: 2.5rem;
+  }
+  & h2 {
+    margin-top: 2rem;
+    font-weight: 400;
+  }
+}
+
+.card-header-image {
+  position: absolute;
+  z-index: 9001;
+  width: 600px;
+  top: -200px;
+  right: -215px;
+}
